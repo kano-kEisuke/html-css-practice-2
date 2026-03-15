@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+/* base styles */
+.noto-sans-jp-regular {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 15px; /* 文字の大きさ */
+  line-height: 1.5; /*行間*/
+  color: #333;
+}
+
+.section {
+  padding: 40px 20px; /* 上下の余白40px、左右の余白20px */
+}
+
+.section-headline {
+      text-align: center;
+}
+.about {}
+.about-image {}
+.about-caption {}
+.about-headline {}
+.about-description {}
+
+
