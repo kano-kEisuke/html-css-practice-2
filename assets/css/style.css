@@ -36,5 +36,19 @@
   font-weight: bold; /* 見出しを太字に */
 }
 
+.grid {
+  display: flex; /* グリッドレイアウトを使用 */
+  gap: 20px; /* グリッドアイテム間のスペース */
+}
 
+.grid-cols-4 > .grid-item {
+width: 25%; /* 4列のグリッドアイテムの幅を25%に設定 */
+}
 
+.feature-image {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  display: block; /* 余白を削除 */
+  margin: 0 auto; /* 中央揃え */
+}
