@@ -11,14 +11,30 @@
 .section {
   padding: 40px 20px; /* 上下の余白40px、左右の余白20px */
 }
+/* sectitonクラスと secondaryクラス両方の設定を持つセレクターで、<section class="section secondary">みたいに書くことで使える*/
+.section.secondary { 
+  background-color: #efefef; /* 背景色を薄いグレーに */
+}
 
 .section-headline {
-      text-align: center;
+      text-align: center; /* 見出しを中央揃え */
+      font-size: 40px; /* 見出しの大きさ */
+      font-weight: bold; /* 見出しを太字に */
+      margin: 0 0 40px; /* 見出しの下に40pxの余白 */
 }
-.about {}
-.about-image {}
-.about-caption {}
-.about-headline {}
-.about-description {}
+.about {
+  margin: 0;
+  display: flex; /* 子要素を横並びにする */
+}
+
+.about-caption {
+  padding-left: 20px; /* 画像と説明の間にスペースを空ける */
+}
+.about-headline {
+  margin: 0 0 20px; /* 見出しの下に20pxの余白 */
+  font-size: 20px; /* 見出しの大きさ */
+  font-weight: bold; /* 見出しを太字に */
+}
+
 
 
