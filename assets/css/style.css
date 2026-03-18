@@ -64,6 +64,5 @@ margin: 0 0 20px; /* 見出しの下に20pxの余白 */
 .feature-description {
   text-align: center; /* 説明文を中央揃え */
   font-size: 14px; /* 説明文の大きさ */
-  color: #666; /* 説明文の色を薄いグレーに */
   margin: 20px 0 0; /* 説明文の上に20pxの余白 */
 }
