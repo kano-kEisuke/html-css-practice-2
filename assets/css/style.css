@@ -43,6 +43,14 @@
 
 .grid-cols-4 > .grid-item {
 width: 25%; /* 4列のグリッドアイテムの幅を25%に設定 */
+list-style: none; /* デフォルトのリストスタイルを削除 */
+}
+
+.feature-headline {
+text-align: center; /* 見出しを中央揃え */
+font-size: 20px; /* 見出しの大きさ */
+font-weight: bold; /* 見出しを太字に */
+margin: 0 0 20px; /* 見出しの下に20pxの余白 */
 }
 
 .feature-image {
@@ -50,5 +58,12 @@ width: 25%; /* 4列のグリッドアイテムの幅を25%に設定 */
   max-width: 200px;
   height: auto;
   display: block; /* 余白を削除 */
-  margin: 0 auto; /* 中央揃え */
+  margin: 0 0 0 20px; /* 中央揃え */
+}
+
+.feature-description {
+  text-align: center; /* 説明文を中央揃え */
+  font-size: 14px; /* 説明文の大きさ */
+  color: #666; /* 説明文の色を薄いグレーに */
+  margin: 20px 0 0; /* 説明文の上に20pxの余白 */
 }
