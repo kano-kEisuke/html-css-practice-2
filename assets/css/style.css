@@ -3,66 +3,205 @@
 /* base styles */
 .noto-sans-jp-regular {
   font-family: "Noto Sans JP", sans-serif;
-  font-size: 15px; /* 文字の大きさ */
-  line-height: 1.5; /*行間*/
+  font-size: 15px;
+  /* 文字の大きさ */
+  line-height: 1.5;
+  /*行間*/
   color: #333;
 }
 
 .section {
-  padding: 40px 20px; /* 上下の余白40px、左右の余白20px */
+  padding: 40px 20px;
+  /* 上下の余白40px、左右の余白20px */
 }
+
 /* sectitonクラスと secondaryクラス両方の設定を持つセレクターで、<section class="section secondary">みたいに書くことで使える*/
-.section.secondary { 
-  background-color: #efefef; /* 背景色を薄いグレーに */
+.section.secondary {
+  background-color: #efefef;
+  /* 背景色を薄いグレーに */
 }
 
 .section-headline {
-      text-align: center; /* 見出しを中央揃え */
-      font-size: 40px; /* 見出しの大きさ */
-      font-weight: bold; /* 見出しを太字に */
-      margin: 0 0 40px; /* 見出しの下に40pxの余白 */
+  text-align: center;
+  /* 見出しを中央揃え */
+  font-size: 40px;
+  /* 見出しの大きさ */
+  font-weight: bold;
+  /* 見出しを太字に */
+  margin: 0 0 40px;
+  /* 見出しの下に40pxの余白 */
 }
+
 .about {
   margin: 0;
-  display: flex; /* 子要素を横並びにする */
+  display: flex;
+  /* 子要素を横並びにする */
 }
 
 .about-caption {
-  padding-left: 20px; /* 画像と説明の間にスペースを空ける */
+  padding-left: 20px;
+  /* 画像と説明の間にスペースを空ける */
 }
+
 .about-headline {
-  margin: 0 0 20px; /* 見出しの下に20pxの余白 */
-  font-size: 20px; /* 見出しの大きさ */
-  font-weight: bold; /* 見出しを太字に */
+  margin: 0 0 20px;
+  /* 見出しの下に20pxの余白 */
+  font-size: 20px;
+  /* 見出しの大きさ */
+  font-weight: bold;
+  /* 見出しを太字に */
 }
 
 .grid {
-  display: flex; /* グリッドレイアウトを使用 */
-  gap: 20px; /* グリッドアイテム間のスペース */
+  display: flex;
+  /* 横並びにする */
+  gap: 20px;
+  /* グリッドアイテム間のスペース */
+  padding: 0;
+  margin: 0;
+  /* グリッドの余白をリセット */
 }
 
-.grid-cols-4 > .grid-item {
-width: 25%; /* 4列のグリッドアイテムの幅を25%に設定 */
-list-style: none; /* デフォルトのリストスタイルを削除 */
+.grid-cols-4>.grid-item {
+  width: 25%;
+  /* 4列のグリッドアイテムの幅を25%に設定 */
+  list-style: none;
+  /* デフォルトのリストスタイルを削除 */
 }
 
 .feature-headline {
-text-align: center; /* 見出しを中央揃え */
-font-size: 20px; /* 見出しの大きさ */
-font-weight: bold; /* 見出しを太字に */
-margin: 0 0 20px; /* 見出しの下に20pxの余白 */
+  text-align: center;
+  /* 見出しを中央揃え */
+  font-size: 20px;
+  /* 見出しの大きさ */
+  font-weight: bold;
+  /* 見出しを太字に */
+  margin: 0 0 20px;
+  /* 見出しの下に20pxの余白 */
 }
 
 .feature-image {
   width: 100%;
   max-width: 200px;
   height: auto;
-  display: block; /* 余白を削除 */
-  margin: 0 0 0 20px; /* 中央揃え */
+  display: block;
+  /* 余白を削除 */
+  margin: 0 0 0 20px;
+  /* 中央揃え */
 }
 
 .feature-description {
-  text-align: center; /* 説明文を中央揃え */
-  font-size: 14px; /* 説明文の大きさ */
-  margin: 20px 0 0; /* 説明文の上に20pxの余白 */
+  text-align: center;
+  /* 説明文を中央揃え */
+  font-size: 14px;
+  /* 説明文の大きさ */
+  margin: 20px 0 0;
+  /* 説明文の上に20pxの余白 */
+}
+
+.grid-cols-3 .grid-item {
+  width: 33.3333%;
+  /* 3列のグリッドアイテムの幅を33.3333%に設定 */
+  list-style: none;
+  /* デフォルトのリストスタイルを削除 */
+}
+
+.card {
+  padding: 0 5px;
+  /* カードの左右に5pxの余白 */
+}
+
+.card-link {
+  display: block;
+  /* カード全体をクリック可能にする */
+  text-decoration: none;
+  /* リンクの下線を消す */
+  color: #333;
+  /* リンクの色を親要素から継承する */
+  position: relative;
+  /* 子要素を自由に配置できるようにする */
+  transition: background-color 0.2s;
+  /* ホバー時の背景色の変化をスムーズにする */
+
+}
+
+.card-link:hover {
+  background-color: #eee;
+  /* ホバー時のリンクの色を変更 */
+}
+
+.card-label {
+  position: absolute;
+  /* カードの左上に配置するために絶対位置を指定 */
+  top: 0px;
+  /* カードの上から0pxの位置 */
+  left: 0px;
+  /* カードの左から0pxの位置 */
+  background-color: #999;
+  /* ラベルの背景色を設定 */
+  color: #fff;
+  /* ラベルの文字色を白に設定 */
+  padding: 5px 10px;
+  /* ラベルの内側の余白を設定 */
+  font-size: 12px;
+  /* ラベルの文字サイズを設定 */
+}
+
+.card-image {
+  width: 100%;
+  /* カードの幅に合わせて画像を拡大縮小 */
+  height: auto;
+  /* 画像の高さを自動調整 */
+}
+
+.card-info {
+  padding: 5px 10px;
+  /* カードの内側の余白を設定 */
+}
+
+.card-headline {
+  font-size: 16px;
+  /* カードの見出しの大きさ */
+  margin: 0;
+  /* カードの見出しの下に5pxの余白 */
+}
+
+.card-discription {
+  margin: 0;
+  /* カードの説明文の上に5pxの余白 */
+  font-size: 14px;
+  /* カードの説明文の大きさ */
+}
+
+.avator {
+  padding: 10px;
+  /* アバターの内側の余白を設定 */
+  display: flex;
+  /* アバターと名前を横並びにする */
+  flex-direction: row-reverse;
+  /* 左右の順序を逆にする */
+  justify-content: start;
+  /* アバターと名前を左寄せにする */
+  align-items: center;
+  /* アバターと名前を垂直方向に中央揃えにする */
+  margin: 0;
+}
+
+.avator-name {
+  font-size: 14px;
+  /* 名前の大きさ */
+  font-weight: bold;
+  /* 名前を太字にする */
+  margin-left: 15px;
+  /* アバターと名前の間にスペースを空ける */
+}
+
+.avator-image-wrapper {
+  margin: 0;
+  /* アバター画像の余白をリセット */
+}
+
+.avator-image {
+  border-radius: 50%;
+  /* アバターを円形にする */
 }
