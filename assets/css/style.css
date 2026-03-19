@@ -32,6 +32,11 @@
   /* 見出しの下に40pxの余白 */
 }
 
+.section-button {
+  margin-top: 40px;
+  text-align: center;
+}
+
 .about {
   margin: 0;
   display: flex;
@@ -204,4 +209,35 @@
 .avator-image {
   border-radius: 50%;
   /* アバターを円形にする */
+}
+
+.button {
+  display: inline-block;
+  /* ボタンをインラインブロック要素にする */
+  padding: 10px 20px;
+  /* ボタンの内側の余白を設定 */
+  font-size: 16px;
+  /* ボタンの文字の大きさ */
+  color: #fff;
+  /* ボタンの文字色を白に設定 */
+  background-color: #333;
+  /* ボタンの背景色を黒に設定 */
+  text-align: center;
+  /* ボタンの文字を中央揃え */
+  border: none;
+  /* ボタンの枠線を消す */
+  border-radius: 5px;
+  /* ボタンの角を丸くする */
+  padding: 15px 60px;
+  /* ボタンの内側の余白を設定 */
+  text-decoration: none;
+  /* ボタンの下線を消す */
+  box-shadow: 5px 5px 0px #bbb;
+  /* ボタンの影を設定 */
+  transition: box-shadow 0.2s;
+}
+
+.button:hover {
+  box-shadow: 0px 0px 0px #bbb;
+  /* クリック時のボタンの影を変更 */
 }
