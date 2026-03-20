@@ -250,6 +250,11 @@
   /* クリック時のボタンの影を変更 */
 }
 
+.button.button-secondary {
+  background-color: #92d3ca;
+  /* セカンダリーボタンの背景色を設定 */
+}
+
 .form-select{
   border-radius: 5px;
   /* フォームの角を丸くする */
@@ -310,4 +315,11 @@
   /* テーブル要素で使うとマージンみたいに外側の余白が広がって見えるっぽい*/
   text-align: left;
   /* テーブルのセルを左揃え */
+ }
+
+ .form-button {
+  margin-top: 20px;
+  /* ボタンの上に20pxの余白 */
+  text-align: center;
+  /* ボタンを中央揃え */
  }
