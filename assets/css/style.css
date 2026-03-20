@@ -10,6 +10,12 @@
   color: #333;
 }
 
+
+
+.form-select, .form-input, .form-radio, .form-textarea {
+  cursor: pointer;
+}
+
 .section {
   padding: 40px 20px;
   /* 上下の余白40px、左右の余白20px */
@@ -235,9 +241,73 @@
   box-shadow: 5px 5px 0px #bbb;
   /* ボタンの影を設定 */
   transition: box-shadow 0.2s;
+  /* ホバー時の影の変化をスムーズにする */
+  cursor: pointer;
 }
 
 .button:hover {
   box-shadow: 0px 0px 0px #bbb;
   /* クリック時のボタンの影を変更 */
 }
+
+.form-select{
+  border-radius: 5px;
+  /* フォームの角を丸くする */
+  padding: 10px;
+  /* フォームの内側の余白を設定 */
+  border: 1px solid #ccc;
+  /* フォームの枠線を設定 [太さ] [スタイル] [色]*/
+  min-width: 500px;
+  /* フォームの最小幅を設定 */
+}
+
+.form-input{
+  border-radius: 5px;
+  /* フォームの角を丸くする */
+  padding: 10px;
+  /* フォームの内側の余白を設定 */
+  border: 1px solid #ccc;
+  /* フォームの枠線を設定 [太さ] [スタイル] [色]*/
+  min-width: 500px;
+  /* フォームの最小幅を設定 */
+}
+
+.form-radio {
+  margin: 0 10px;
+  /* ラジオボタンとテキストの間にスペースを空ける */
+}
+
+.form-textarea {
+  border-radius: 5px;
+  /* フォームの角を丸くする */
+  padding: 10px;
+  /* フォームの内側の余白を設定 */
+  border: 1px solid #ccc;
+  /* フォームの枠線を設定 [太さ] [スタイル] [色]*/
+  min-width: 500px;
+  /* フォームの最小幅を設定 */
+  resize: none;
+  /* テキストエリアのリサイズを禁止 */
+}
+
+/*
+ フォーム
+ */
+
+ .form-table{
+  margin: 0 auto; /* ブロックレベル要素に０ autoを設定すると中央揃えになる */
+ }
+
+ .form-table th {
+    padding: 10px;
+  /* テーブルの見出しの内側の余白を設定 */
+  text-align: left;
+  /* テーブルの見出しを左揃え */
+ }
+
+ .form td {
+  padding: 10px;
+  /* テーブル要素で使うとマージンみたいに外側の余白が広がって見えるっぽい*/
+  text-align: left;
+  /* テーブルのセルを左揃え */
+ }

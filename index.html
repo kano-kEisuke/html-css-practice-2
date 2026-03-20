@@ -166,6 +166,63 @@
 
     <section class="section secondary">
         <h1 class="section-headline">Contact</h1> <!-- h1 １番でかい見出し -->
+        <form action="" class="form"><!-- フォームを作るタグ -->
+            <table class="form-table"> <!-- フォーム全体を一つのグループにして綺麗に整列させるためのタグ-->
+                <tr class="form-row"> <!-- 行を作るタグ -->
+                    <th>
+                        Menu
+                    </th> <!-- 見出しを作るタグ -->
+                    <td>
+                        <select name="menu" id="menu" class="form-select"> <!-- プルダウンを作るタグ -->
+                            <option value="menu-1">Menu 1</option> <!-- 選択肢を作るタグ valueに入れる名前はバックエンドに認識させるためのもの -->
+                            <option value="menu-2">Menu 2</option>
+                            <option value="menu-3">Menu 3</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="form-row">
+                    <th>
+                        Name
+                    </th>
+                    <td>
+                        <input type="text" name="name" id="name" class="form-input"> <!-- テキストを入力するためのタグ -->
+                    </td>
+                </tr>
+                <tr class="form-row">
+                    <th>
+                        Email
+                    </th>
+                    <td>
+                        <input type="email" name="email" id="email" class="form-input"> <!-- emailを入力するためのタグ typeをemailにすることでメールアドレス以外は受け付けないようになる -->
+                    </td>
+                </tr>
+                <tr class="form-row">
+                    <th>
+                        Gender
+                    </th>
+                    <td>
+                        <label for="male" class="form-radio"> <!-- 文字をクリックすると対応するラジオボタンが選択されるようにするためのタグ -->
+                            <input type="radio" name="gender" id="male" value="male">Male <!-- ラジオボタンを作るタグ nameを同じにすることで複数の選択肢の中から一つだけ選べるようになる -->
+                        </label>
+                        <label for="female" class="form-radio"> <!-- 文字をクリックすると対応するラジオボタンが選択されるようにするためのタグ -->
+                            <input type="radio" name="gender" id="female" value="female">Female
+                        </label>
+                        <label for="other" class="form-radio"> <!-- 文字をクリックすると対応するラジオボタンが選択されるようにするためのタグ -->
+                            <input type="radio" name="gender" id="other" value="other">Other
+                        </label>
+                    </td>
+                </tr>
+                <tr class="form-row">
+                    <th class="form-label">
+                        Detail
+                    </th>
+                    <td>
+                        <textarea name="message" id="message" cols="30" rows="10" class="form-textarea"></textarea> <!-- 複数行のテキストを入力するためのタグ -->
+                    </td>
+                </tr>
+            </table>
+            <button type="submit" class="button">Submit</button> <!-- 送信ボタンを作るタグ -->
+        </form>
     </section>
 
     <script src="./assets/js/app.js"></script>
