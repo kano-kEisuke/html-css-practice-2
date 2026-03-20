@@ -12,7 +12,7 @@ const items = document.querySelectorAll('.grid-cols-4 .grid-item');
 
 
 items.forEach(function (item) { //変数itemsの要素を全てループして、itemに格納する
-    item.addEventListener('click', function () { //itemに格納された要素がクリックされるのを待ち構える
+    item.addEventListener('click', function () { //itemに格納された要素がクリックれた時の処理を登録する
         //以下がクリックされたときの処理
         items.forEach(function (allitem) { //変数itemsの要素を全てループして、allitemに格納する
             allitem.classList.remove('active'); //allitemに格納された要素からactiveクラスを削除する
