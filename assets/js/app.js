@@ -1,10 +1,10 @@
 // テスト用でボタン押したらアラート出すやつ
-// const buttons = document.querySelectorAll('.button');
-// buttons.forEach(function (btn) {
-//     btn.addEventListener('click', function () {
-//         alert('クリックされました！');
-//     });
-// });
+const buttons = document.querySelectorAll('.button');
+buttons.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+        alert('クリックされました！');
+    });
+});
 
 
 //grid-cols-4 .grid-itemの要素を全て取得してitemsに格納
