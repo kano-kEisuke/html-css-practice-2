@@ -12,13 +12,24 @@
 
 
 
-.form-select, .form-input, .form-radio, .form-textarea {
+.form-select,
+.form-input,
+.form-radio,
+.form-textarea {
   cursor: pointer;
 }
 
 .section {
   padding: 40px 20px;
   /* 上下の余白40px、左右の余白20px */
+  opacity: 0;
+  /* 最初は透明 */
+  transition: opacity 1s;
+  /* 透明→不透明を1秒かけてアニメーション */
+}
+
+.section.visible {
+    opacity: 1;  /* visible クラスが付くと不透明に */
 }
 
 /* sectitonクラスと secondaryクラス両方の設定を持つセレクターで、<section class="section secondary">みたいに書くことで使える*/
@@ -259,7 +270,7 @@
   /* セカンダリーボタンの背景色を設定 */
 }
 
-.form-select{
+.form-select {
   border-radius: 5px;
   /* フォームの角を丸くする */
   padding: 10px;
@@ -270,7 +281,7 @@
   /* フォームの最小幅を設定 */
 }
 
-.form-input{
+.form-input {
   border-radius: 5px;
   /* フォームの角を丸くする */
   padding: 10px;
@@ -303,27 +314,28 @@
  フォーム
  */
 
- .form-table{
-  margin: 0 auto; /* ブロックレベル要素に０ autoを設定すると中央揃えになる */
- }
+.form-table {
+  margin: 0 auto;
+  /* ブロックレベル要素に０ autoを設定すると中央揃えになる */
+}
 
- .form-table th {
-    padding: 10px;
+.form-table th {
+  padding: 10px;
   /* テーブルの見出しの内側の余白を設定 */
   text-align: left;
   /* テーブルの見出しを左揃え */
- }
+}
 
- .form td {
+.form td {
   padding: 10px;
   /* テーブル要素で使うとマージンみたいに外側の余白が広がって見えるっぽい*/
   text-align: left;
   /* テーブルのセルを左揃え */
- }
+}
 
- .form-button {
+.form-button {
   margin-top: 20px;
   /* ボタンの上に20pxの余白 */
   text-align: center;
   /* ボタンを中央揃え */
- }
+}

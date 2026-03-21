@@ -33,3 +33,18 @@ form.addEventListener('submit', function (event) {
         alert('名前を入力してください')
     }
 })
+
+const sections = document.querySelectorAll('.section');
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+            // 画面に入った時
+            entry.target.classList.add('visible');
+        }
+    });
+});
+
+sections.forEach(function(section) {
+    observer.observe(section);
+});
